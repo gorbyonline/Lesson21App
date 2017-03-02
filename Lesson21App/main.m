@@ -11,6 +11,11 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        
+        NSLog(@"Just some changes for git commit ))");
+        
+        NSLog(@"Another changes for commit");
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
