@@ -13,9 +13,11 @@
 		825012C81E68421B00A29252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825012C61E68421B00A29252 /* Main.storyboard */; };
 		825012CA1E68421B00A29252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825012C91E68421B00A29252 /* Assets.xcassets */; };
 		825012CD1E68421B00A29252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825012CB1E68421B00A29252 /* LaunchScreen.storyboard */; };
+		D1D9636F488C48C08E8FC15F /* libPods-Lesson21App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA45C91C775269B31D6DAD1 /* libPods-Lesson21App.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FA45C91C775269B31D6DAD1 /* libPods-Lesson21App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lesson21App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		825012BA1E68421B00A29252 /* Lesson21App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson21App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		825012BE1E68421B00A29252 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		825012C01E68421B00A29252 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		825012C91E68421B00A29252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		825012CC1E68421B00A29252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		825012CE1E68421B00A29252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863946A9A49BD20470688F03 /* Pods-Lesson21App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson21App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson21App/Pods-Lesson21App.release.xcconfig"; sourceTree = "<group>"; };
+		C0F48818507B84BC9C6B02A5 /* Pods-Lesson21App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson21App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson21App/Pods-Lesson21App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D9636F488C48C08E8FC15F /* libPods-Lesson21App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		413E2DC7A9A4E9888CB878CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0F48818507B84BC9C6B02A5 /* Pods-Lesson21App.debug.xcconfig */,
+				863946A9A49BD20470688F03 /* Pods-Lesson21App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		825012B11E68421A00A29252 = {
 			isa = PBXGroup;
 			children = (
 				825012BC1E68421B00A29252 /* Lesson21App */,
 				825012BB1E68421B00A29252 /* Products */,
+				413E2DC7A9A4E9888CB878CF /* Pods */,
+				93BCDFB103628EE208F42753 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		93BCDFB103628EE208F42753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FA45C91C775269B31D6DAD1 /* libPods-Lesson21App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 825012D11E68421B00A29252 /* Build configuration list for PBXNativeTarget "Lesson21App" */;
 			buildPhases = (
+				430557E1744E3B3B8EF596FA /* [CP] Check Pods Manifest.lock */,
 				825012B61E68421B00A29252 /* Sources */,
 				825012B71E68421B00A29252 /* Frameworks */,
 				825012B81E68421B00A29252 /* Resources */,
+				CA682B9C905571B6C48C2B74 /* [CP] Embed Pods Frameworks */,
+				10526903EB37421A2D914CF1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10526903EB37421A2D914CF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lesson21App/Pods-Lesson21App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		430557E1744E3B3B8EF596FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA682B9C905571B6C48C2B74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lesson21App/Pods-Lesson21App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		825012B61E68421B00A29252 /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		825012D21E68421B00A29252 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F48818507B84BC9C6B02A5 /* Pods-Lesson21App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lesson21App/Info.plist;
@@ -281,6 +357,7 @@
 		};
 		825012D31E68421B00A29252 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 863946A9A49BD20470688F03 /* Pods-Lesson21App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lesson21App/Info.plist;
