@@ -16,6 +16,8 @@ int main(int argc, char * argv[]) {
         
         NSLog(@"Another changes for commit");
         
+        NSLog(@"Now it works!");
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
